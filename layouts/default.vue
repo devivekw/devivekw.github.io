@@ -9,8 +9,8 @@
 					<div class="flex items-center space-x-4">
 						<Dark />
 						<Button><a href="#about">about</a></Button>
-						<Button><a href="#projects">projects</a></Button>
 						<Button><a href="#experience">experience</a></Button>
+						<Button><a href="#projects">projects</a></Button>
 					</div>
 				</nav>
 				<Nuxt />
