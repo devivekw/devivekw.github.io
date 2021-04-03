@@ -1,0 +1,34 @@
+{
+	"name": "devivekw.github.io",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt build",
+		"generate": "nuxt generate",
+		"start": "nuxt start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/devivekw/devivekw.github.io.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/devivekw/devivekw.github.io/issues"
+	},
+	"homepage": "https://github.com/devivekw/devivekw.github.io#readme",
+	"dependencies": {
+		"nuxt": "^2.15.4"
+	},
+	"devDependencies": {
+		"@nuxtjs/tailwindcss": "^4.0.3",
+		"@tailwindcss/postcss7-compat": "^2.0.4",
+		"autoprefixer": "^9.8.6",
+		"postcss": "^7.0.35",
+		"prettier": "^1.19.1",
+		"tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4"
+	}
+}
