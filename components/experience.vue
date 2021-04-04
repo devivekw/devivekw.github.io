@@ -8,13 +8,13 @@
 				v-for="(exp, i) in exps"
 				:key="i"
 				:href="exp.link"
-				class="flex m-4 overflow-hidden transition-transform transform bg-white rounded-lg shadow-lg sm:h-48 dark:bg-gray-800 hover:scale-105"
+				class="flex flex-col m-4 overflow-hidden transition-transform transform bg-white rounded-lg shadow-lg sm:flex-row sm:h-48 dark:bg-gray-800 hover:scale-105"
 				:class="{ 'flex-row-reverse': i == 1 }"
 			>
 				<div>
-					<img class="object-cover w-64 h-full" :src="exp.image" />
+					<img class="object-cover w-full h-40 sm:w-64 sm:h-full" :src="exp.image" />
 				</div>
-				<div class="px-4 py-2 mt-2 w-96">
+				<div class="px-4 py-2 mt-2 w-72 m:w-96">
 					<div class="flex items-baseline text-xs font-semibold tracking-wide uppercase">
 						<span
 							class="flex items-center justify-center px-2 leading-snug rounded-full"

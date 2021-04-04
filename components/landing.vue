@@ -1,10 +1,10 @@
 <template>
 	<div class="grid place-items-center">
-		<img :src="$store.state.darkMode ? mewhite : meblack" class="w-96 h-96" alt="Animated Picture" />
-		<div class="flex flex-col items-center text-2xl">
+		<img :src="$store.state.darkMode ? mewhite : meblack" class="w-48 h-48 sm:w-96 sm:h-96" alt="Animated Picture" />
+		<div class="flex flex-col items-center text-base sm:text-2xl">
 			<span class="font-mono">Hey, I'm</span>
-			<span class="mt-4 text-3xl font-medium">Vivek Wadhwani</span>
-			<span class="flex items-center mt-6 font-mono text-lg">
+			<span class="mt-4 text-xl font-medium sm:text-3xl">Vivek Wadhwani</span>
+			<span class="flex items-center mt-6 font-mono text-sm sm:text-lg">
 				<span class="mr-3">></span>
 				<div ref="typeme" id="typeme" class="typeme"></div
 			></span>

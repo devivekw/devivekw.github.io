@@ -53,7 +53,7 @@ export default {
 					tags: ['mongodb', 'graphql'],
 					name: 'Dr Car API',
 					desc:
-						'Working mainly on the backend I helped architure an extensive GraphQL based API connected with Mongoose.',
+						'Worked mainly on the backend I helped architure an extensive GraphQL based API connected with Mongoose.',
 				},
 				{
 					tags: ['next.js', 'graphql'],
@@ -62,9 +62,15 @@ export default {
 						'Working with a colleague to build a platform that lets teachers and students connect easily and meet right on the platform.',
 				},
 				{
-					tags: ['tailwind', 'nuxt'],
+					tags: ['tailwind', 'nuxt', 'firebase'],
 					name: 'devivek.me',
 					desc: 'As an avid user of tailwindcss, to practice I built the entire website using just the framework.',
+				},
+				{
+					tags: ['vue'],
+					name: '@chakra-ui/chakra-ui-vue',
+					desc:
+						"Contributing to the Open Source community of chakra-ui's  vue package, being an user of its React library I really wanted to see it's Vue3 package grow as well",
 				},
 			],
 		};

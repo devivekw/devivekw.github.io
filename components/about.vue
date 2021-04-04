@@ -4,7 +4,7 @@
 			<span class="p-2 font-mono text-3xl">about me</span>
 		</div>
 		<br />
-		<article class="mt-8 prose dark:text-white">
+		<article class="mt-8 prose-sm sm:prose dark:text-white">
 			<p class="lead dark:text-gray-200">
 				My name is Vivek, I am currently pursuing a Bachelor of Science in Computer Science. I am of Indian ethnicity. I
 				enjoy listening to music and podcasts as well as following various sports.
