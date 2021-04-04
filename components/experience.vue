@@ -8,7 +8,7 @@
 				v-for="(exp, i) in exps"
 				:key="i"
 				:href="exp.link"
-				class="flex flex-col m-4 overflow-hidden transition-transform transform bg-white rounded-lg shadow-lg sm:flex-row sm:h-48 dark:bg-gray-800 hover:scale-105"
+				class="flex flex-col m-4 overflow-hidden transition-transform transform bg-white rounded-lg shadow-lg sm:flex-row dark:bg-gray-800 hover:scale-105"
 				:class="{ 'flex-row-reverse': i == 1 }"
 			>
 				<div>
