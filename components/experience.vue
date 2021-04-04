@@ -5,90 +5,75 @@
 		</div>
 		<div class="flex flex-col mt-8 ">
 			<a
-				href="https://bmslab.utwente.nl/"
-				class="flex h-40 m-4 overflow-hidden transition-transform transform bg-white rounded-lg shadow-lg hover:scale-105"
+				v-for="(exp, i) in exps"
+				:key="i"
+				:href="exp.link"
+				class="flex m-4 overflow-hidden transition-transform transform bg-white rounded-lg shadow-lg sm:h-48 dark:bg-gray-800 hover:scale-105"
+				:class="{ 'flex-row-reverse': i == 1 }"
 			>
 				<div>
-					<img
-						class="object-center w-64 h-full"
-						src="https://ugc.futurelearn.com/uploads/images/c8/4f/hero_c84f6682-ab7b-42ba-b87c-847de7651292.jpg"
-						alt=""
-					/>
+					<img class="object-cover w-64 h-full" :src="exp.image" />
 				</div>
 				<div class="px-4 py-2 mt-2 w-96">
 					<div class="flex items-baseline text-xs font-semibold tracking-wide uppercase">
-						<span class="flex items-center justify-center px-2 leading-snug text-blue-800 bg-blue-100 rounded-full">
-							CURRENT
+						<span
+							class="flex items-center justify-center px-2 leading-snug rounded-full"
+							:class="[i == 1 ? 'text-red-800 bg-red-100' : 'text-blue-800 bg-blue-100']"
+						>
+							{{ exp.tag }}
 						</span>
 					</div>
 					<div class="mt-2">
-						<h2 class="text-lg font-bold capitalize">Creative Technologist | The BMS Lab</h2>
-						<p class="mt-1 text-sm leading-snug text-gray-500">
-							This is bali this is the best you will never regret chlling here. You can eat and chill with all so cheap.
+						<h2 class="text-lg font-bold capitalize">{{ exp.head }}</h2>
+						<p class="mt-1 text-sm leading-snug text-gray-500 dark:text-gray-200">
+							{{ exp.desc }}
 						</p>
 					</div>
 					<div class="mt-2">
-						<span class="font-semibold text-gray-600">Sep 2020 - Current</span>
-					</div>
-				</div>
-			</a>
-
-			<a
-				href="https://drcar.ca/"
-				class="flex flex-row-reverse h-40 m-4 overflow-hidden transition-transform transform bg-white rounded-lg shadow-lg hover:scale-105"
-			>
-				<div>
-					<img
-						class="object-cover w-64 h-full"
-						src="https://images.unsplash.com/photo-1570071677470-c04398af73ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1212&q=80"
-					/>
-				</div>
-				<div class="px-4 py-2 mt-2 w-96">
-					<div class="flex items-baseline text-xs font-semibold tracking-wide uppercase">
-						<span class="flex items-center justify-center px-2 leading-snug text-red-800 bg-red-100 rounded-full">
-							start up
-						</span>
-					</div>
-					<div class="mt-2">
-						<h2 class="text-lg font-bold capitalize">Full Stack Developer - Dr🍁Car</h2>
-						<p class="mt-1 text-sm leading-snug text-gray-500">
-							This is bali this is the best you will never regret chlling here. You can eat and chill with all so cheap.
-						</p>
-					</div>
-					<div class="mt-2">
-						<span class="font-semibold text-gray-600">July 2020 - Jan 2021</span>
-					</div>
-				</div>
-			</a>
-
-			<a
-				href="https://lassonde.yorku.ca/"
-				class="flex h-40 m-4 overflow-hidden transition-transform transform bg-white rounded-lg shadow-lg hover:scale-105"
-			>
-				<div>
-					<img
-						class="object-cover w-64 h-full"
-						src="https://images.adsttc.com/media/images/5670/cb0d/e58e/cee9/c000/02c3/newsletter/ZAS_bergeron-093-Pano-Edit_new.jpg?1450232561"
-						alt=""
-					/>
-				</div>
-				<div class="px-4 py-2 mt-2 w-96">
-					<div class="flex items-baseline text-xs font-semibold tracking-wide uppercase">
-						<span class="flex items-center justify-center px-2 leading-snug text-blue-800 bg-blue-100 rounded-full">
-							research
-						</span>
-					</div>
-					<div class="mt-2">
-						<h2 class="text-lg font-bold capitalize">Machine Learning Research Assistant</h2>
-						<p class="mt-1 text-sm leading-snug text-gray-500">
-							This is bali this is the best you will never regret chlling here. You can eat and chill with all so cheap.
-						</p>
-					</div>
-					<div class="mt-2">
-						<span class="font-semibold text-gray-600">Sep 2020 - Current</span>
+						<span class="font-semibold text-gray-600 dark:text-gray-300">{{ exp.time }}</span>
 					</div>
 				</div>
 			</a>
 		</div>
 	</div>
 </template>
+
+<script>
+export default {
+	data() {
+		return {
+			exps: [
+				{
+					tag: 'current',
+					image: 'https://ugc.futurelearn.com/uploads/images/c8/4f/hero_c84f6682-ab7b-42ba-b87c-847de7651292.jpg',
+					link: 'https://bmslab.utwente.nl/',
+					head: 'Creative Technologist - The BMS Lab',
+					desc:
+						'Working as a Creative Technologist for the BMS Lab at the University of Twente. Improving the CI/CD workflow as well as setting a benchmark for their frontend projects.',
+					time: 'Sep 2020 - Current',
+				},
+				{
+					tag: 'start up',
+					image:
+						'https://images.unsplash.com/photo-1570071677470-c04398af73ca?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1212&q=80',
+					link: 'https://drcar.ca/',
+					head: 'Full Stack Developer - Dr🍁Car',
+					desc:
+						'Been part of a newly formed team working with the latest of technologies such as React Native for cross-platform apps and GraphQL for a structured API.',
+					time: 'July 2020 - Jan 2021',
+				},
+				{
+					tag: 'research',
+					image:
+						'https://images.adsttc.com/media/images/5670/cb0d/e58e/cee9/c000/02c3/newsletter/ZAS_bergeron-093-Pano-Edit_new.jpg?1450232561',
+					link: 'https://lassonde.yorku.ca/',
+					head: 'Machine Learning Research Assistant',
+					desc:
+						'Designing a machine learning model to predict afraudulent credit card transaction based on skewedlarge-scale datasets. Leveraging pandas, scikit-learn, libsvm in Python to build a binary classifier',
+					time: 'May 2020 - Aug 2020',
+				},
+			],
+		};
+	},
+};
+</script>

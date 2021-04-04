@@ -4,8 +4,8 @@
 			<span class="p-2 font-mono text-3xl">about me</span>
 		</div>
 		<br />
-		<div class="mt-8 prose-lg">
-			<p>
+		<article class="mt-8 prose dark:text-white">
+			<p class="lead dark:text-gray-200">
 				My name is Vivek, I am currently pursuing a Bachelor of Science in Computer Science. I am of Indian ethnicity. I
 				enjoy listening to music and podcasts as well as following various sports.
 			</p>
@@ -23,14 +23,14 @@
 				have proved to very helpful. They have taught me to be diligent and caring as well as helped me to keep and eye
 				on the goal and always stay focused.
 			</p>
-			<br />
-			<blockquote>"When you struggle with a problem, that's when you understand it." ~ Elon Musk</blockquote>
-			<br />
+			<blockquote class="dark:text-gray-200">
+				"When you struggle with a problem, that's when you understand it." ~ Elon Musk
+			</blockquote>
 			<p>
 				This quote has deeply affected my way of learning, coming from a mindset where I value experience more than
 				education it can be easy to lose yourself in pursuing many different opportunities and thus give up easily. This
 				quote has helped me stay focused however difficult a problem may become and always keep learning from it.
 			</p>
-		</div>
+		</article>
 	</div>
 </template>

@@ -29,12 +29,14 @@ export default {
 	mounted() {
 		new Typed(this.$refs.typeme, {
 			strings: [
-				'I had a typing speed of <b class="p-1 bg-gray-100 rounded-md dark:bg-gray-800">78wpm</b>',
+				'I had a typing speed of <b class="p-1 bg-gray-100 rounded-md dark:bg-gray-800">68wpm</b>',
 				'I have a typing speed of <b class="p-1 bg-gray-100 rounded-md dark:bg-gray-800">89wpm</b>',
 				'I want a typing speed of <b class="p-1 bg-gray-100 rounded-md dark:bg-gray-800">121wpm</b>',
 			],
 			typeSpeed: 40,
 			loopCount: Infinity,
+			cursorChar: '&#9647;',
+			loop: true,
 		});
 	},
 };

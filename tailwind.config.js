@@ -15,10 +15,13 @@ module.exports = {
 			spacing: {
 				192: '48rem',
 			},
+			ringColor: colors,
 		},
 	},
 	variants: {
-		extend: {},
+		extend: {
+			boxShadow: ['dark'],
+		},
 	},
 	plugins: [require('@tailwindcss/typography')],
 };
