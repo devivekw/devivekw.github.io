@@ -1,7 +1,8 @@
 <template>
 	<button
 		@click="$store.commit('toggleDarkMode')"
-		class="p-2 rounded-md  focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-800"
+		class="p-2 rounded-md focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-800"
+		aria-label="dark mode toggle"
 	>
 		<svg
 			class="w-6 h-6"

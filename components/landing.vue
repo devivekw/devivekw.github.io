@@ -1,6 +1,7 @@
 <template>
 	<div class="grid place-items-center">
-		<img :src="$store.state.darkMode ? mewhite : meblack" class="w-48 h-48 sm:w-96 sm:h-96" alt="Animated Picture" />
+		<nuxt-img v-if="!$store.state.darkMode" src="/meblack.png" class="w-48 h-48 sm:w-96 sm:h-96" />
+		<nuxt-img v-else src="/mewhite.png" class="w-48 h-48 sm:w-96 sm:h-96" />
 		<div class="flex flex-col items-center text-base sm:text-2xl">
 			<span class="font-mono">Hey, I'm</span>
 			<span class="mt-4 text-xl font-medium sm:text-3xl">Vivek Wadhwani</span>
@@ -15,15 +16,9 @@
 <script>
 import Typed from 'typed.js';
 
-import meblack from '../assets/content/meblack.png';
-import mewhite from '../assets/content/mewhite.png';
-
 export default {
 	data() {
-		return {
-			meblack,
-			mewhite,
-		};
+		return {};
 	},
 
 	mounted() {

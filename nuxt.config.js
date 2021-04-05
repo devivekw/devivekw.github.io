@@ -1,5 +1,5 @@
 export default {
-	buildModules: ['@nuxtjs/tailwindcss'],
+	buildModules: ['@nuxtjs/tailwindcss', '@nuxt/image'],
 	head: {
 		title: 'devivek',
 		meta: [
