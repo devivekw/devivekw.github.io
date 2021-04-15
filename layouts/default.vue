@@ -16,7 +16,7 @@
 						<Button class="hidden sm:block"><a href="#projects">projects</a></Button>
 					</div>
 				</nav>
-				<div class="px-12 lg:px-36 xl:px-48">
+				<div class="px-10 lg:px-36 xl:px-48">
 					<Nuxt />
 				</div>
 			</div>
