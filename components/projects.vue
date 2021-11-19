@@ -63,7 +63,7 @@ export default {
 				},
 				{
 					tags: ['tailwind', 'nuxt', 'firebase'],
-					name: 'devivek.me',
+					name: 'devivek.live',
 					desc: 'As an avid user of tailwindcss, to practice I built the entire website using just the framework.',
 				},
 				{
