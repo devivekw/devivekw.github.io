@@ -1,4 +1,15 @@
 /*!
+ * 
+ *   typed.js - A JavaScript Typing Animation Library
+ *   Author: Matt Boldt <me@mattboldt.com>
+ *   Version: v2.0.12
+ *   Url: https://github.com/mattboldt/typed.js
+ *   License(s): MIT
+ * 
+ */
+
+
+/*!
   * vue-router v3.5.1
   * (c) 2021 Evan You
   * @license MIT
@@ -18,21 +29,15 @@
 
 
 /*!
- * 
- *   typed.js - A JavaScript Typing Animation Library
- *   Author: Matt Boldt <me@mattboldt.com>
- *   Version: v2.0.12
- *   Url: https://github.com/mattboldt/typed.js
- *   License(s): MIT
- * 
- */
-
-
-/*!
  * The buffer module from node.js, for the browser.
  *
  * @author   Feross Aboukhadijeh <http://feross.org>
  * @license  MIT
+ */
+
+/*!
+ * simple-analytics-vue v1.1.5
+ * (c) 
  */
 
 /*!
