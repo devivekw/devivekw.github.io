@@ -23,6 +23,7 @@
 	"dependencies": {
 		"@tailwindcss/typography": "^0.4.0",
 		"nuxt": "^2.15.4",
+		"simple-analytics-vue": "^1.1.5",
 		"typed.js": "^2.0.12"
 	},
 	"devDependencies": {

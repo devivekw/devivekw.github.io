@@ -7,7 +7,7 @@
 					:class="[showShadow ? 'shadow dark:shadow pt-2' : 'pt-12']"
 				>
 					<nuxt-link to="/" class="bg-gray-100 rounded-md dark:bg-gray-800">
-						<span class="p-2 font-mono hover:underline">devivek.me</span>
+						<span class="p-2 font-mono hover:underline">devivek.live</span>
 					</nuxt-link>
 					<div class="flex items-center space-x-4">
 						<Dark />

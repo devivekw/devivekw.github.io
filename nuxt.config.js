@@ -10,4 +10,5 @@ export default {
 		link: [{ hid: 'icon', rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
 	},
 	target: 'static',
+	plugins: [{ src: '~/plugins/simple-analytics.js', ssr: false }],
 };
