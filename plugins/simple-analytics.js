@@ -4,5 +4,5 @@ import Vue from 'vue';
 
 Vue.use(SimpleAnalytics, {
 	skip: process.env.NODE_ENV !== 'production',
-	domain: 'sa.devivek.live',
+	// domain: 'sa.devivek.live',
 });
