@@ -4,7 +4,7 @@
 		<nuxt-img v-else src="/mewhite.png" class="w-48 h-48 sm:w-96 sm:h-96" />
 		<div class="flex flex-col items-center text-base sm:text-2xl">
 			<span class="font-mono">Hey, I'm</span>
-			<span class="mt-4 text-xl font-medium sm:text-3xl">Vivek Wadhwani</span>
+			<span class="mt-4 text-xl font-medium sm:text-3xl">Saakshi is a hoe</span>
 			<span class="flex items-center mt-6 font-mono text-sm sm:text-lg">
 				<span class="mr-3"></span>
 				<div ref="typeme" id="typeme" class="typeme"></div>
