@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+import { extract, fontSize } from 'fluid-tailwind';
 
 module.exports = {
 	purge: [
@@ -10,6 +11,8 @@ module.exports = {
 	],
 	darkMode: 'class', // or 'media' or 'class'
 	theme: {
+		fontSize,
+		screens,
 		extend: {
 			colors,
 			spacing: {
@@ -23,5 +26,8 @@ module.exports = {
 			boxShadow: ['dark'],
 		},
 	},
-	plugins: [require('@tailwindcss/typography')],
+	content: {
+		extract,
+	},
+	plugins: [require('fluid-tailwind')],
 };
