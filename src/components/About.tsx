@@ -103,7 +103,7 @@ export default function About() {
 				</BlurInView>
 			</div>
 
-			<div className="absolute -bottom-2/4 left-0 grid w-full place-items-center">
+			<BlurInView delay={0.2} className="absolute -bottom-2/4 left-0 grid w-full place-items-center">
 				<a
 					href="https://github.com/devivekw/devivekw.github.io"
 					className="group flex flex-row items-center rounded-full px-4 py-2 text-zinc-500 duration-500 hover:bg-zinc-500/30 hover:text-zinc-300"
@@ -111,7 +111,7 @@ export default function About() {
 					<div className="font-mono decoration-zinc-400/50 group-hover:underline">devivekw.github.io</div>
 					<SiGithub className="ml-2 size-4" />
 				</a>
-			</div>
+			</BlurInView>
 		</div>
 	);
 }

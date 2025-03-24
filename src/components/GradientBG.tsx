@@ -91,7 +91,7 @@ const Gradientdiv: React.FC<GradientdivProps> = ({ children }) => {
 	return (
 		<>
 			<AbstractShape />
-			<div className="fixed inset-0 z-0 min-h-full min-w-full bg-black/25 backdrop-blur-2xl" />
+			<div className="fixed inset-0 z-0 min-h-full min-w-full bg-zinc-950/30 backdrop-blur-2xl" />
 			{/* <MenuBar /> */}
 			<div className="z-10 w-full">{children}</div>
 		</>

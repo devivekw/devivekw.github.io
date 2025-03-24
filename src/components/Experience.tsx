@@ -52,10 +52,10 @@ const experienceData = [
 
 export const ExperienceCard = ({ cardContent }: { cardContent: (typeof experienceData)[number] }) => {
 	return (
-		<>
+		<BlurInView className="size-full">
 			<div className="h-full w-full overflow-hidden rounded-xl bg-black/10 duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-zinc-950">
 				<div className="size-full bg-[url(/grid-ellipsis.svg)] bg-[length:30px_30px] bg-repeat">
-					<div className="size-full bg-gradient-to-br from-zinc-950 via-zinc-950/70 to-zinc-950">
+					<div className="via-zinc-950/ size-full bg-gradient-to-br from-zinc-950 via-zinc-950/30 to-zinc-950">
 						<div className={'flex h-full flex-col justify-between p-4 text-start md:p-8'}>
 							<div className="flex flex-row items-center justify-between gap-2">
 								<h3 className="font-space text-xl font-bold text-white md:text-3xl">{cardContent.title}</h3>
@@ -78,7 +78,7 @@ export const ExperienceCard = ({ cardContent }: { cardContent: (typeof experienc
 					</div>
 				</div>
 			</div>
-		</>
+		</BlurInView>
 	);
 };
 
@@ -90,7 +90,7 @@ export default function Experience() {
 					experience
 				</h2>
 			</BlurInView>
-			<BlurInView className="mt-10 grid grid-cols-1 gap-6 xl:grid-cols-15">
+			<div className="mt-10 grid grid-cols-1 gap-6 xl:grid-cols-15">
 				<div className="lg:col-span-8">
 					<ExperienceCard cardContent={experienceData[0]} />
 				</div>
@@ -103,7 +103,7 @@ export default function Experience() {
 				<div className="lg:col-span-8">
 					<ExperienceCard cardContent={experienceData[3]} />
 				</div>
-			</BlurInView>
+			</div>
 		</div>
 	);
 }
