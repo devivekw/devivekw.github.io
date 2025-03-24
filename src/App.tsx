@@ -8,7 +8,7 @@ const ScreenContainer = ({ children }: { children: React.ReactNode }) => {
 
 function App() {
 	return (
-		<div className="xl:max-w-8xl mx-5 grid place-items-center md:mx-10 lg:mx-20 xl:mx-auto">
+		<div className="xl:max-w-8xl mx-3 grid place-items-center md:mx-10 lg:mx-20 xl:mx-auto">
 			<MenuBar />
 			<ScreenContainer>
 				<Landing />

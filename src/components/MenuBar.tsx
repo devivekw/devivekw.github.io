@@ -33,17 +33,17 @@ export default function MenuBar() {
 				// 	mixBlendMode: 'difference',
 				// 	transition: { duration: 2, type: 'linear' },
 				// }}
-				className="z-20 flex h-15 w-full flex-row items-center justify-between rounded-full border-2 border-white/10 bg-white/5 px-4 shadow-md backdrop-blur-2xl duration-1000 hover:border-white/20 hover:bg-white/20 hover:shadow-2xl lg:h-20"
+				className="z-20 flex h-15 w-full flex-row items-center justify-between rounded-full border-2 border-white/10 bg-white/5 px-2 shadow-md backdrop-blur-2xl duration-1000 hover:border-white/20 hover:bg-white/20 hover:shadow-2xl lg:h-20 lg:px-4"
 			>
 				<motion.img
 					src={myImage}
 					alt="me"
 					className="h-10 rounded-full lg:h-16"
-					whileHover={{ scale: 1.5, rotate: 360 }}
+					whileHover={{ scale: 1.1, rotate: 360 }}
 				/>
 				<motion.a
 					href="https://www.linkedin.com/in/devivek/"
-					className="z-30 flex flex-row items-center justify-center rounded-full bg-white px-6 py-4 shadow-md"
+					className="py-auto z-30 flex flex-row items-center justify-center rounded-full bg-white px-5 py-3 shadow-md lg:px-6 lg:py-4"
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.9 }}
 				>
