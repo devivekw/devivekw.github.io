@@ -1,6 +1,6 @@
 import { DocumentIcon, LinkIcon } from '@heroicons/react/24/solid';
 import { SiGithub } from '@icons-pack/react-simple-icons';
-import { motion } from 'motion/react';
+import { motion, RepeatType, Transition } from 'motion/react';
 import myImage from '../assets/meblack.png';
 import BlurInView from './BlurInView';
 
@@ -19,11 +19,13 @@ export default function About() {
 		y: -20,
 		opacity: 0.9,
 	};
-	const transition = {
+	const getTransition = (delay: number): Transition => ({
+		type: 'tween',
 		duration: 3,
 		repeat: Infinity,
-		repeatType: 'reverse',
-	};
+		repeatType: 'reverse' as RepeatType,
+		delay,
+	});
 
 	return (
 		<div className="relative z-10 mt-60 min-w-full pb-20 sm:mt-0">
@@ -83,19 +85,19 @@ export default function About() {
 							className={`absolute top-0 -left-10 h-72 w-72 rounded-full bg-zinc-400 opacity-70 mix-blend-multiply blur-xl`}
 							initial={initial}
 							animate={animate}
-							transition={transition}
+							transition={getTransition(0)}
 						/>
 						<motion.div
 							className={`absolute top-10 left-0 h-72 w-72 rounded-full bg-gray-300 opacity-70 mix-blend-multiply blur-xl`}
 							initial={initial}
 							animate={animate}
-							transition={{ ...transition, delay: 1 }}
+							transition={getTransition(1)}
 						/>
 						<motion.div
 							className={`absolute top-0 left-10 h-72 w-72 rounded-full bg-white/50 opacity-70 mix-blend-multiply blur-xl`}
 							initial={initial}
 							animate={animate}
-							transition={{ ...transition, delay: 2 }}
+							transition={getTransition(2)}
 						/>
 					</div>
 				</BlurInView>

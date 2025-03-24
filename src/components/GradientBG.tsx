@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion, RepeatType, Transition } from 'motion/react';
 import React, { ReactNode, useEffect, useState } from 'react';
 
 interface GradientdivProps {
@@ -37,11 +37,13 @@ const AbstractShape = () => {
 		y: 20,
 		opacity: 0.7,
 	};
-	const transition = {
+	const getTransition = (delay: number): Transition => ({
+		type: 'tween',
 		duration: 3,
 		repeat: Infinity,
-		repeatType: 'reverse' as const,
-	};
+		repeatType: 'reverse' as RepeatType,
+		delay,
+	});
 
 	return (
 		<div className="-z-10">
@@ -51,8 +53,8 @@ const AbstractShape = () => {
 					scale: 4,
 				}} // Starting state: circle with gray color
 				animate={{
-					x: Math.min(Math.round(mousePosition.x - pxSize / 2)), // Cen'ter the shape at the mouse position
-					y: Math.min(Math.round(mousePosition.y)),
+					x: Math.round(mousePosition.x - pxSize / 2), // Cen'ter the shape at the mouse position
+					y: Math.round(mousePosition.y),
 					scale: 1,
 				}}
 				transition={{
@@ -60,29 +62,26 @@ const AbstractShape = () => {
 					mass: 1,
 					stiffness: 100,
 					damping: 10,
-					// delay: 0.1, // duration: 1,
-					// duration: 3, // Duration for the shape and color transition
 				}}
 			>
 				<motion.div
 					className={`absolute top-0 -left-20 h-72 w-72 rounded-full bg-teal-400 opacity-70 mix-blend-multiply`}
 					initial={initial}
 					animate={animate}
-					transition={transition}
+					transition={getTransition(0)}
 				/>
 				<motion.div
 					className={`absolute -top-20 left-20 h-72 w-72 rounded-full bg-cyan-500 opacity-70 mix-blend-multiply`}
 					initial={initial}
 					animate={animate}
-					transition={{ ...transition, delay: 1 }}
+					transition={getTransition(1)}
 				/>
 				<motion.div
 					className={`absolute top-0 left-20 h-72 w-72 rounded-full bg-indigo-500 opacity-70 mix-blend-multiply`}
 					initial={initial}
 					animate={animate}
-					transition={{ ...transition, delay: 2 }}
+					transition={getTransition(2)}
 				/>
-				{/* </motion.div> */}
 			</motion.div>
 		</div>
 	);
