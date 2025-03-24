@@ -40,7 +40,7 @@ const AbstractShape = () => {
 	const transition = {
 		duration: 3,
 		repeat: Infinity,
-		repeatType: 'reverse',
+		repeatType: 'reverse' as const,
 	};
 
 	return (

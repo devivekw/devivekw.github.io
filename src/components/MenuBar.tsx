@@ -8,7 +8,7 @@ export default function MenuBar() {
 	const { scrollY } = useScroll();
 	const lastYRef = useRef(0);
 
-	useMotionValueEvent(scrollY, 'change', (y) => {
+	useMotionValueEvent(scrollY, 'change', (y: number) => {
 		const difference = y - lastYRef.current;
 		if (Math.abs(difference) > 50) {
 			setHidden(difference > 0);
